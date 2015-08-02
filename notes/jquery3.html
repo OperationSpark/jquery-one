@@ -42,7 +42,11 @@
 <li><code>document.querySelectorAll</code></li>
 </ol>
 
-<p>However, these are verbose and pretty inflexible ways to access the DOM. With jQuery, we can use <code>$()</code> to pass in a CSS-style selector and grab an element. Let's modify the <code>&lt;body&gt;</code> of the HTML we made from <a href="http://learn.makersquare.com/courses/js_fundamentals/jquery-basics/getting-jquery.mdx">Getting jQuery</a> to have a variety of elements we can practice selecting:</p>
+<p>However, these are verbose and pretty inflexible ways to access the DOM. With jQuery, we can use <code>$()</code> to pass in a CSS-style selector and grab an element. 
+
+<h2><a href="#setup">Setup</a></h2>
+<p>We can test out jQuery right in our web browser's console, in the REPL of the Chrome Developers Tools.</p>
+<p>Before we do, let's add some markup to the <code>&lt;body&gt;</code> of our index.html page. In your website's workspace, open of the index.html page of the jquery-project, and let's modify the <code>&lt;body&gt;</code> by adding some markup so we have a variety of elements we can practice selecting.  We your finished, the full <code>&lt;body&gt;</code> should look like this:</p>
 <div class="block-code"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -88,16 +92,7 @@
 </td></tr></tbody></table></div>
 
   </div>
-  <div class="progress-check">
-    <div class="off">
-      <i class="icon-signin"></i>
-      <span>Done?</span>
-    </div>
-    <div class="on">
-      <i class="icon-check"></i>
-      <span>Done!</span>
-    </div>
-  </div>
+  
 </div>
 <h2>CSS Selection</h2>
 <div class="step" data-number="1" data-human-number="2">
@@ -320,20 +315,15 @@
 
 <p>However, this is only one part of jQuery. As a matter of fact, jQuery is utilizing another library, called <a href="http://sizzlejs.com/">Sizzle.js</a>, which is a library designed specifically to turn CSS selectors into complex native JavaScript to let you select DOM elements easily.</p>
 
-
   </div>
-  <div class="progress-check">
-    <div class="off">
-      <i class="icon-signin"></i>
-      <span>Done?</span>
-    </div>
-    <div class="on">
-      <i class="icon-check"></i>
-      <span>Done!</span>
-    </div>
-  </div>
+  <hr>
 </div>
+<h2>Playtime</h2>
+
+<p>The following jQuery queries can be run directly in the console (REPL) of web browser while viewing the index.html page of the jquery-one project. Open up your console and follow along...
+
 <h2>DOM Sets</h2>
+
 <div class="step" data-number="2" data-human-number="3">
   <div class="step-content" data-human-number="3">
     
@@ -391,22 +381,11 @@
 
 
   </div>
-  <div class="progress-check">
-    <div class="off">
-      <i class="icon-signin"></i>
-      <span>Done?</span>
-    </div>
-    <div class="on">
-      <i class="icon-check"></i>
-      <span>Done!</span>
-    </div>
-  </div>
+  
 </div>
 <h2>DOM Traversal Methods</h2>
 <div class="step" data-number="3" data-human-number="4">
   <div class="step-content" data-human-number="4">
-    
-
 
 
 <p>Besides selecting elements directly and then filtering them, you can also find elements related to your selected elements with a number of DOM traversal methods. These methods will work on all of the elements in the matched set simultaneously.</p>

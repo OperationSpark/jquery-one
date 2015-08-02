@@ -50,14 +50,26 @@
         <li>If your webserver is running, <a href="index.html" target="_blank">your index.html should be available here...</a>. If it's not, ask for help!</li>
       </ol>
     </section>
+    
     <section>
-      <h2>EXERCISES</h2>
-      <h3 id="-exercise-1-">EXERCISE 1:</h3>
-      <h4 id="-using-only-html-css-">USING ONLY HTML &amp; CSS:</h4>
+      <h2>Setup:</h2>
+        <ul>
+            <li>
+              <input type="checkbox">In your website's workspace, open up the index.html at <strong>projects/jquery-one/index.html</strong>.  You'll code in here.
+            </li>
+        </ul>
+    </section>
+    
+    <section>
+      <h2>Exercise 1</h2>
+      
+      <h4>Add Markup:</h4>
+      <p>You will have already completed the following steps of linking to the jQuery library AND creating the necessary markup in our index.html page IF you followed the setup steps in both <a href="notes/jquery2.html#setup">Getting jQuery</a> and <a href="notes/jquery3.html#setup">Selecting Elements</a>.</p>
+      
+      <p>If you've completed those setup steps of linking jquery and adding the markup to your <code>&lt;body&gt;</code> tag of the index.html page, you can checkoff all the steps in this <strong>Add Markup:</strong> section, and move on to the next section, <strong>Accessing Elements Using JavaScript and jQuery</strong>.</p>
+      
       <ul>
-        <li>
-          <input type="checkbox">In the <strong>jquery-one project directory</strong>, create a new HTML file, called <strong>exercise.html</strong>, and fill it in with the basic required HTML tags. Once you do this, <a href="exercise.html" target="_blank">this new exercise.html file will be available here...</a></li>
-        <li>
+         <li>
           <input type="checkbox">Add a &lt;div&gt; with an ID of &quot;container&quot;</li>
         <li>
           <input type="checkbox">Give that &lt;div&gt; node four children nodes, an &lt;h1&gt; tag, two &lt;p&gt; tags and two &lt;div&gt; tags.</li>
@@ -68,16 +80,16 @@
         <li>
           <input type="checkbox">Give each &lt;div class=&quot;holder&quot;&gt; an unordered list as a child element.</li>
         <li>
-          <input type="checkbox">Add an empty &lt;script&gt; tag just before the &lt;/body&gt; tag. Give it a &quot;src&quot; attribute with the value &quot;<a href="https://code.jquery.com/jquery-2.1.1.js">https://code.jquery.com/jquery-2.1.1.js</a>&quot;</li>
+          <input type="checkbox">Add an empty &lt;script&gt; tag just before the &lt;/body&gt; tag. Give it a &quot;src&quot; attribute with the value &quot;<a href="https://code.jquery.com/jquery-2.1.4.js">https://code.jquery.com/jquery-2.1.1.js</a>&quot;</li>
         <li>
           <input type="checkbox">Make sure jQuery is working by typing <code>jQuery</code> into the browser console. It should return a function and not throw an error.</li>
-        <li>
-          <input type="checkbox">Add a second &lt;script&gt; tag below the first to contain your own code</li>
       </ul>
-      <h4 id="-using-only-javascript-and-jquery-">USING ONLY JAVASCRIPT AND JQUERY:</h4>
+      <h4>Accessing Elements Using JavaScript and jQuery:</h4>
       <ul>
         <li>
-          <input type="checkbox">Create a new variable called &quot;allDIVs&quot; and assign to it a jQuery object containing reference all the &lt;div&gt; tags on the page.</li>
+          <input type="checkbox">Add a second &lt;script&gt; tag just before the ending &lt;/body&gt; tag. Your JavaScript will be written within this &lt;script&gt;&lt;/script&gt; tag tag</li>
+        <li>
+          <input type="checkbox">Within the &lt;script&gt; tag, create a new variable called &quot;allDIVs&quot; and assign to it a jQuery object containing reference all the &lt;div&gt; tags on the page.</li>
         <li>
           <input type="checkbox">assign a jQuery object containing reference all the &lt;ul&gt;s to a variable &quot;allULs&quot;</li>
         <li>
