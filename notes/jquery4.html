@@ -41,34 +41,8 @@
               <p>Once we've gotten elements selected with jQuery, we need to atually do something with them. jQuery offers a <a href="http://api.jquery.com/">full-fledged API</a> for manipulating the DOM with a number of different methods. We'll go over
                 a variety of different methods we can use to add, remove, and move elements.</p>
 
-              <p>Before we get started, let's set up a basic HTML page to manipulate:</p>
-              <div class="block-code">
-                <table class="highlighttable">
-                  <tbody>
-                    <tr>
-                      <td class="linenos">
-                        <div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7</pre></div>
-                      </td>
-                      <td class="code">
-                        <div class="highlight"><pre><span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h1&gt;</span>A heading!<span class="nt">&lt;/h1&gt;</span>
-        <span class="nt">&lt;p&gt;</span>Here's some text!<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p&gt;</span>Here's a second set of text!<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-</pre></div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <p><a href="jquery3.html#setup">In the setup section of Selecting Elements</a>, we already added some markup to the index.html page of our jquery-one project, so we're good to start playing around with the DOM.</p>
+              
               <h2>Creating and Adding Elements</h2>
 
               <p>If you need to add an element to the DOM that doesn't exist, you can use <a href="http://api.jquery.com/append/">the append() method</a>. Append takes in an arbitrary string of HTML or a jQuery object and puts it inside of a selected element,
@@ -107,7 +81,7 @@
                       </td>
                       <td class="code">
                         <div class="highlight"><pre><span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"everything"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;h1&gt;</span>A heading!<span class="nt">&lt;/h1&gt;</span>
         <span class="nt">&lt;p&gt;</span>Here's some text!<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;p&gt;</span>Here's a second set of text!<span class="nt">&lt;/p&gt;</span>
@@ -129,7 +103,7 @@
                         <div class="linenodiv"><pre>1</pre></div>
                       </td>
                       <td class="code">
-                        <div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#container'</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">'&lt;div&gt;Another element&lt;/div&gt;'</span><span class="p">);</span>
+                        <div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#everything'</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">'&lt;div&gt;Another element&lt;/div&gt;'</span><span class="p">);</span>
 </pre></div>
                       </td>
                     </tr>
@@ -154,7 +128,7 @@
                       </td>
                       <td class="code">
                         <div class="highlight"><pre><span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"everything"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;h1&gt;</span>A heading!<span class="nt">&lt;/h1&gt;</span>
         <span class="nt">&lt;p&gt;</span>Here's some text!<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;p&gt;</span>Here's a second set of text!<span class="nt">&lt;/p&gt;</span>
@@ -273,7 +247,7 @@
                       </td>
                       <td class="code">
                         <div class="highlight"><pre><span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"everything"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;h1&gt;</span>A heading!<span class="nt">&lt;/h1&gt;</span>
         <span class="nt">&lt;p&gt;</span>Here's some text!<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;p&gt;</span>Here's a second set of text!<span class="nt">&lt;/p&gt;</span>
@@ -294,7 +268,7 @@
                         <div class="linenodiv"><pre>1</pre></div>
                       </td>
                       <td class="code">
-                        <div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#container'</span><span class="p">).</span><span class="nx">empty</span><span class="p">();</span>
+                        <div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#everything'</span><span class="p">).</span><span class="nx">empty</span><span class="p">();</span>
 </pre></div>
                       </td>
                     </tr>
@@ -314,7 +288,7 @@
                       </td>
                       <td class="code">
                         <div class="highlight"><pre><span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"everything"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
 </pre></div>
@@ -358,7 +332,7 @@
                       </td>
                       <td class="code">
                         <div class="highlight"><pre><span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"everything"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;p&gt;</span>Here's some text!<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;p&gt;</span>Here's a second set of text!<span class="nt">&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -399,7 +373,7 @@
                       </td>
                       <td class="code">
                         <div class="highlight"><pre><span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"everything"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;h1&gt;</span>A heading!<span class="nt">&lt;/h1&gt;</span>
         <span class="nt">&lt;p&gt;</span>Here's some text!<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;p&gt;</span>Here's a second set of text!<span class="nt">&lt;/p&gt;</span>
@@ -442,7 +416,7 @@
                       </td>
                       <td class="code">
                         <div class="highlight"><pre><span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"everything"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;p&gt;</span>Here's some text!<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;p&gt;</span>Here's a second set of text!<span class="nt">&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -463,7 +437,7 @@
                         <div class="linenodiv"><pre>1</pre></div>
                       </td>
                       <td class="code">
-                        <div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'h1'</span><span class="p">).</span><span class="nx">insertAfter</span><span class="p">(</span><span class="s1">'#container'</span><span class="p">);</span>
+                        <div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'h1'</span><span class="p">).</span><span class="nx">insertAfter</span><span class="p">(</span><span class="s1">'#everything'</span><span class="p">);</span>
 </pre></div>
                       </td>
                     </tr>
